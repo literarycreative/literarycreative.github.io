@@ -122,3 +122,17 @@ img {
 	letter-spacing: 1px;
 	font-size: 12px;
 }
+
+main {
+	max-width: 1224px;
+	margin: 0 auto;
+}
+
+#bread {
+	width: 100px;
+	margin: 1em;
+}
+
+#collage {
+	padding: 2em 0;
+}
