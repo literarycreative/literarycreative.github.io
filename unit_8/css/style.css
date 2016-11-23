@@ -6,7 +6,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-* { margin:0; padding:0; box-sizing:border-box; }
+h1,h2,h3,h4,h5,h6 {
+	margin:0;
+}
+
 
 body {
     background-color: #FCFBF4;
@@ -25,18 +28,17 @@ h1 {
     font-family: 'Vollkorn';
     font-weight: lighter;
     font-size: 36px;
+    padding-top: .8em;
+    padding-bottom: .5em;
 }
 
 h2 {
 	color: #fff;
     font-family: 'Roboto';
     font-stretch: condensed;
-    font-weight: normal;
     font-size: 1em;
     letter-spacing: 1.5px;
     font-weight: lighter;
-    
-   
 }
 
 h3 {
@@ -58,6 +60,17 @@ h4 {
 	letter-spacing: 1px;
 	color:#000;
 	text-transform:uppercase;
+	margin-bottom: -.25em;
+	text-align: center;
+
+	
+}
+
+#new {
+	max-width: 600px;
+	width: 100%;
+	margin: 8px auto;
+	margin-top: 10px;
 }
 
 h5 {
@@ -71,6 +84,42 @@ h5 {
 	text-transform:uppercase;
 }
 
+h6 {
+	font-style: normal;
+	font-family: 'Vollkorn';
+	font-weight: bold;
+	font-size: 1em;
+	text-align:center;
+	color:#000;
+}
+
+.date {
+	font-style: bold;
+	font-family: 'Vollkorn';
+	font-weight: normal;
+	font-size: .8em;
+	text-align:center;
+	color:#000;
+}
+
+.description {
+	font-style: normal;
+	font-family: 'Vollkorn';
+	font-weight: bold;
+	font-size: .8em;
+	text-align:center;
+	color:#000;
+}
+
+.author {
+	font-style: normal;
+	font-family: 'Vollkorn';
+	font-weight: normal;
+	font-size: .9em;
+	text-align:center;
+	color:#000;
+}
+
 p {
     color: #000000;
     font-family: 'Vollkorn';
@@ -79,11 +128,27 @@ p {
 ul {
     text-align: center;
     list-style-type: none;
-    -webkit-margin-before: 0em;
+    -webkit-margin-before: 2em;
     -webkit-margin-after: 0em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
     -webkit-padding-start: 0px;
+}
+
+li {
+	display: inline-block;
+	width: 49%;
+	margin: 0 auto;
+	vertical-align: top;
+	height: 145px;
+	text-align: center;
+}
+
+
+
+#logo {
+	max-width: 4.5em;
+	margin-top: 1em;
 }
 
 header {
@@ -105,7 +170,7 @@ header h2 {
     max-width: 250px;
     float: right;
     text-align: left;
-    margin-right: 4em;
+    margin-right: 8em;
 }
 
 a {
@@ -122,8 +187,11 @@ nav a {
 }
 
 nav {
+	max-width: 600px;
+	width: 100%;
 	margin-bottom: 1em;
 	text-align: center;
+	margin: auto;
   
 
 }
@@ -147,39 +215,83 @@ main {
 	margin: 0 auto;
 }
 
+.featuresubtitle {
+	font-size: .8em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.featuresubtitle2 {
+	font-size: .8em;
+	margin-top: -12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.featureauthor {
+	font-size: .9em;
+	margin-top: -4px;
+	font-family: 'Roboto';
+	font-weight: bold;
+	margin-bottom: -3px;
+	text-align: center;
+}
+
+.featuredescription {
+	font-style: normal;
+	font-family: 'Vollkorn';
+	font-weight: 100;
+	font-size: .8em;
+	text-align:center;
+	color:#000;
+}
+
+.link {
+	font-weight: bolder;
+	margin-top: -5px;
+	text-align:center;
+}
+
 #bread {
-	width: 200px;
+	max-width: 200px;
+	width: 100%;
 	margin: 1em;
-	padding-left: 50px;
+	padding-left: 30px;
 }
 
 #toast {
-	width: 374px;
+	max-width: 374px;
+	width: 100%;
 	margin: 1em;
-	padding-top: 48px;
 }
 
 #sarah {
-	width: 425px;
-	margin: 1em;
-	padding-left: 150px;
-	padding-bottom: 25px;
+	max-width: 425px;
+	width: 100%;
+	margin-left: 3em;
+	padding: 2em;
+
 }
 
 #baking {
-	width: 200px;
-	margin: 1em;
+	max-width: 200px;
+	width: 100%;
 }
 
 #books {
-	width: 800px;
+	max-width: 1000px;
+	width: 100%;
+
 	
 }
 
 #collage {
+	max-width: 800px;
+	width: 100%;
 	padding: 2em 0;
-    padding: 20px;
+    padding: 10px;
     display: inline-block;
+    padding-bottom: 50px;
 }
 
 #bookshelf {
@@ -209,6 +321,13 @@ main {
 
  }
 
+ #featurebook {
+ 	max-width: 320px;
+ 	width: 100%;
+ 	margin-left: 0px;
+ 	text-align: left;
+ }
+
 .clearfix:after {
     visibility: hidden;
     display: block;
@@ -220,21 +339,22 @@ main {
 
 .col-0 {
 	font-size: 1em;
-	width: 30%;
-	padding: 5%;
+	width: 48%;
 	display: inline-block;
 	float: left;
 	text-align: center;
-	padding-left: 175px
+	padding-bottom: 0em;
+	padding: 0em;
 }
 
 
 .col-1 {
 	font-size: 1em;
-	width: 36%;
+	width: 48%;
 	display: inline-block;
 	float: left;
 	text-align: left;
+	padding: 0em;
 	
 }
 
@@ -256,21 +376,124 @@ main {
 }
 
 #two_column {
-    padding: 20px;
+	max-width: 600px;
+    margin:0 auto;
+
 }
 
-.left {
-    float: left;
-    width: 30%;
-}
 
-.right {
-    float: right;   
-    width: 62%;
-}
 
 .fourboxes {
  
     float: left;
-    width: 45%;
+    width: 50%;
+}
+
+.footer {
+	font-size: .8em;
+}
+
+@media screen and (max-width: 529px){
+/*	nav {
+		display: none;
+	}*/
+
+	nav a {
+		display: block;
+		text-align: center;
+		margin: 0;
+	}
+}
+
+
+@media screen and (max-width: 600px){
+	.col-0 {
+		width:100%;
+		float:none;
+		height: auto;
+		margin: 0 auto;
+		padding: none;
+	}
+
+	.col-1 {
+		width:100%;
+		float:none;
+		height: auto;
+		margin: 0 auto;
+		padding: none;
+	}
+
+	.col-2 {
+		width:100%;
+		float:none;
+		height: auto;
+		margin: 0 auto;
+		padding: none;
+	}
+
+	.col-3 {
+		width:100%;
+		float:none;
+		height: auto;
+		margin: 0 auto;
+		padding: none;
+	}
+
+	#featurebook {
+		width:100%;
+		float: none;
+		height: auto;
+		margin: 0 auto;
+		padding: 0em;
+	}
+
+	#bread {
+		width:100%;
+		float: none;
+		height: auto;
+		margin: 0 auto;
+		padding: 0em;
+	}
+
+	#toast {
+		width:100%;
+		float: none;
+		height: auto;
+		margin: 0 auto;
+		padding: 0em;
+	}
+
+	#sarah {
+		width:100%;
+		float: none;
+		height: auto;
+		margin: 0 auto;
+		padding: 0em;
+	}
+
+	#baking {
+		width:100%;
+		float: left;
+		height: auto;
+		margin: 0 auto;
+		padding: 0em;
+	}
+}
+
+@media screen and (max-width: 532px){
+	.fourboxes {
+		width:100%;
+		float:none;
+		height: auto;
+	}
+
+}
+
+@media screen and (max-width: 532px){
+	li {
+		width:100%;
+		float:none;
+		height: auto;
+	}
+
 }
